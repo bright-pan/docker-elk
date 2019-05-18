@@ -25,7 +25,7 @@ services:
     volumes:
       - ./logstash/config/logstash.yml:/usr/share/logstash/config/logstash.yml:ro
       - ./logstash/pipeline:/usr/share/logstash/pipeline:ro
-      - /Users/jason/exchange/supervisor/logs/:/logs:ro
+      - /Users/jason/archsys/supervisor/logs/:/logs:ro
       - ./logstash/mapping:/mapping:ro
     ports:
       - "5000:5000"
